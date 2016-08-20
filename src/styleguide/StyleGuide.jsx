@@ -110,6 +110,8 @@ function globalizeModules() {
 
     window.Search = modules.Search;
 
+    window.Sidebar = modules.Sidebar;
+
     window.Tab = modules.Tab;
     window.TabMenu = modules.TabMenu;
     window.Tabs = modules.Tabs;
