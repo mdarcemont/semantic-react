@@ -102,8 +102,6 @@ function globalizeModules() {
 
     window.Modal = modules.Modal;
 
-    window.Sidebar = modules.Sidebar;
-
     window.Popup = modules.Popup;
     window.Bar = modules.Bar;
     window.Progress = modules.Progress;
