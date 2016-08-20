@@ -51,11 +51,11 @@ export default class Modal extends React.Component {
         onModalClosed: () => {},
         initialAnimation: {
             opacity: 0.5,
-            transform3d: (0, 0, 0)
+            scale: 0.5
         },
         enterAnimation: {
             opacity: spring(1, { stiffness: 300, damping: 40, precision: 1 }),
-            transform3d: (0, 0, 0)
+            scale: spring(1, { stiffness: 300, damping: 25, precision: 1 })
         },
         leaveAnimation: {
             opacity: spring(0, { stiffness: 700, damping: 40, precision: 1 }),
@@ -78,7 +78,7 @@ export default class Modal extends React.Component {
             modalHeight: 1,
             modalWidth: 1,
             active: props.active,
-            closing: false
+            closing: false,
         };
 
         this.modal = null;
